@@ -54,6 +54,11 @@
             listBtn.textContent = 'Delete';
             // append the listItem as children of list
             list.appendChild(listItem);
+
+            // added event handler to the delete button for that when it clicked it will delete the entire list item
+            listBtn.addEventListener ('click', () => {
+              list.removeChild(listItem);
+            }); 
         });
     </script>
   </body>
