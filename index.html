@@ -31,7 +31,7 @@
     </ul>
 
     <script>
-        // create 3 variables to store 3 elements references.
+        // created 3 variables to store 3 elements (ul, input & button) references.
         const list = document.querySelector('ul');
         const input = document.querySelector('input');
         const button = document.querySelector('button');
@@ -41,7 +41,17 @@
             const myItem = input.value;
             // console.log(myItem);
             input.value = '';
-        })
+
+            // created 3 elements and store in variables
+            const listItem = document.createElement('li');
+            const listText = document.createElement('span');
+            const listBtn = document.createElement('button');
+
+            // append the span & button as a children of the list item
+            listItem.appendChild('listText');
+            listItem.appendChild('listBtn');
+
+        });
     </script>
   </body>
 </html>
