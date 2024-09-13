@@ -47,10 +47,13 @@
             const listText = document.createElement('span');
             const listBtn = document.createElement('button');
 
-            // append the span & button as a children of the list item
-            listItem.appendChild('listText');
-            listItem.appendChild('listBtn');
-
+            // append the span & the button as a children of the list item
+            listItem.appendChild(listText);
+            listText.textContent = myItem;
+            listItem.appendChild(listBtn);
+            listBtn.textContent = 'Delete';
+            // append the listItem as children of list
+            list.appendChild(listItem);
         });
     </script>
   </body>
